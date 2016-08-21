@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="codeSide">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title ng-bind="(title || 'Home') + ' :: Firebase Email Verification'">Firebase Email Verification</title>
+    <meta name="description" content="Firebase Email Verification">
+    <meta property="og:description" content="Firebase Email Verification">
+    <meta property="og:site_name" content="Firebase Email Verification">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Firebase Email Verification">
+    <!-- into assets -->
+    <link rel="shortcut icon " href="./assets/images/favicon.png ">
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight " content="no ">
+    <!-- Web Application Manifest -->
+    <link rel="manifest " href="/manifest.json ">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable " content="yes ">
+    <meta name="application-name " content="Firebase Email Verification ">
+    <meta name="theme-color " content="#303F9F ">
+    <link rel="icon " sizes="192x192 " href="./assets/images/touch/touch-icon-192x192.png ">
+    <link rel="icon " sizes="128x128 " href="./assets/images/touch/touch-icon-128x128.png ">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable " content="yes ">
+    <meta name="apple-mobile-web-app-status-bar-style " content="black-translucent ">
+    <meta name="apple-mobile-web-app-title " content="Firebase Email Verification ">
+    <link rel="apple-touch-icon " href="./assets/images/touch/touch-icon-180x180.png ">
+    <link rel="apple-touch-icon-precomposed " href="./assets/images/touch/touch-icon-180x180.png ">
+    <meta name="apple-mobile-web-app-status-bar-style " content="#303F9F ">
+    <!-- Tile icon for Win8 -->
+    <meta name="msapplication-TileImage " content="./assets/images/touch/touch-icon-144x144.png ">
+    <meta name="msapplication-TileColor " content="#3372DF ">
+    <meta name="msapplication-navbutton-color " content="#303F9F ">
+    <!-- Foundation style -->
+    <link rel="stylesheet" href="./vendor/foundation-sites/dist/foundation.min.css ">
+    <link rel="stylesheet" href="./assets/styles/mycss.css ">
+    <link rel="stylesheet" href="./vendor/codemirror/lib/codemirror.css ">
+    <link rel="stylesheet" href="./vendor/toastr/toastr.min.css ">
+    <link rel="stylesheet" href="./assets/styles/foundation-icons/foundation-icons.css " />
+    <link rel="stylesheet" type="text/css " href="./vendor/ngprogress/ngProgress.css ">
+</head>
+
+<body>
+    <!-- Header menu -->
+    <ng-include src=" 'templates/menu.html' "></ng-include>
+    <!-- Main body -->
+    <div class="wrapper ">
+        <div class="row ">
+            <ui-view></ui-view>
+        </div>
+        <!-- Footer under wrapper -->
+        <ng-include src=" 'templates/footer.html' "></ng-include>
+    </div>
+    <!-- Footer menu -->
+    <!-- Maybe -->
+    <!-- Angular imports -->
+    <script src="vendor/jquery/dist/jquery.min.js "></script>
+    <script src="vendor/angular/angular.js "></script>
+    <script src="vendor/firebase/firebase.js "></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "add yours here",
+        authDomain: "add yours here",
+        databaseURL: "add yours here",
+        storageBucket: "",
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.min.js "></script>
+    <script src="vendor/angularfire/dist/angularfire.min.js "></script>
+    <script src="vendor/angular-ui-router-title/angular-ui-router-title.js "></script>
+    <script src="vendor/ngMeta/dist/ngMeta.min.js "></script>
+    <!-- Setting 'Foundations' -->
+    <script src="vendor/what-input/what-input.js "></script>
+    <script src="vendor/foundation-sites/dist/plugins/foundation.core.js "></script>
+    <script src="vendor/foundation-sites/dist/foundation.js "></script>
+    <script src="vendor/toastr/toastr.min.js "></script>
+    <!-- ngProgress -->
+    <script src="vendor/ngprogress/build/ngprogress.min.js "></script>
+    <!-- Actual Angular App (AAA)-->
+    <script src="build/codeside.js "></script>
+    <!-- Foundation plugins we need -->
+</body>
+
+</html>

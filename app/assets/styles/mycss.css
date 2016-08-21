@@ -1,0 +1,157 @@
+/* Footer stuff */
+
+.wrapper {
+    /*min-height: 100%;*/
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+.footer,
+.push {
+    height: 4em;
+}
+
+.padding {
+    padding: 4px;
+}
+
+.myMenu {
+    border-bottom: 1px solid grey;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.loader {
+    color: black;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 22vh;
+    opacity: 0.8;
+}
+
+.loader span {
+    display: inline-block;
+    -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+}
+
+.loader span:nth-child(odd) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+@-webkit-keyframes pulse {
+    to {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+@keyframes pulse {
+    to {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+.size-12 {
+    font-size: 12px;
+}
+
+.size-14 {
+    font-size: 14px;
+}
+
+.size-16 {
+    font-size: 16px;
+}
+
+.size-18 {
+    font-size: 18px;
+}
+
+.size-21 {
+    font-size: 21px;
+}
+
+.size-24 {
+    font-size: 24px;
+}
+
+.size-36 {
+    font-size: 36px;
+}
+
+.size-48 {
+    font-size: 48px;
+}
+
+.size-60 {
+    font-size: 60px;
+}
+
+.size-72 {
+    font-size: 72px;
+}
+
+.dimmed {
+    position: relative;
+}
+
+.dimmed:after {
+    content: " ";
+    z-index: 10;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.about-box {
+    margin-top: 20px;
+}
+
+.divider {
+    border-bottom: 2px solid #d6d6d6;
+    padding-bottom: 2px;
+}
+
+.word-section {
+    margin: 10px 0 10px 0;
+}
+
+.hoverable:hover {
+    border: 1px solid grey;
+}
+
+.cards {
+    padding: 0.4em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom:5px;
+    border-radius: 2px;
+}
+
+.cards:hover {
+    box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.comments {
+    margin-top:30px;
+    padding:10px;
+}
+
+.undersnippet {
+    border-top:1px solid grey;
+}

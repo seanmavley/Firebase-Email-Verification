@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="small-12 medium-10 medium-centered columns">
+        <div class="myMenu" ng-controller="MenuController">
+            <span class="show-for-small-only">
+      <a ui-sref="home" class="button" title="Home"><i class="step fi-home size-18"></i></a>
+        <span ng-show="loggedIn">
+        <a ui-sref="admin" class="button small" title="Admin Page"><i class="step fi-widget size-18"></i></a>
+        <a ng-click="logout()" class="button small" title="Logout"><i class="step fi-power size-18"></i></a>
+        </span>
+            <span ng-show="!loggedIn">
+        <a ui-sref="login" class="button small" title="Login">Login</a>
+        <a ui-sref="signup" class="button small" title="Register">Register</a>
+        </span>
+            </span>
+            <div class="show-for-medium">
+                <a ui-sref="home" class="button">Home</a>
+                <span ng-show="loggedIn">
+        <a ui-sref="admin" class="button small">Dashboard</a>
+        <a ng-click="logout()" class="button small">Logout</a>
+        </span>
+                <span ng-show="!loggedIn">
+        <a ui-sref="login" class="button small">Login</a>
+        <a ui-sref="signup" class="button small">Register</a>
+        </span>
+            </div>
+        </div>
+    </div>
+</div>

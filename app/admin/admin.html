@@ -1,0 +1,16 @@
+<div class="small-12 medium-6 medium-centered large-8 large-centered columns">
+    <div ng-show="!authInfo">
+        <div class="loader">
+            <span>{</span><span>}</span>
+        </div>
+    </div>
+    <div ng-show="authInfo">
+        <h2>Profile</h2>
+        <p>Name: {{ authInfo.displayName || "No name" }} </p>
+        <p>Email: {{ authInfo.email || "No email" }}</p>
+        <p>Email: {{ authInfo.emailVerified ? 'Verified' : 'Not Verified' }}
+        <p ng-show="{{ !authInfo.emailVerified }}">
+            <a ng-click="sendVerifyEmail()" class="button small">Verify Email</a>
+        </p>
+    </div>
+</div>

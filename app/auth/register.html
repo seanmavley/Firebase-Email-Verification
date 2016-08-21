@@ -1,0 +1,27 @@
+<div ng-controller="LogRegController">
+    <div class="large-6 large-centered medium-8 medium-centered small-12 columns">
+        <form ng-submit="register()" name="registerForm">
+            <fieldset class="fieldset">
+                <legend>Quick sign up</legend>
+                <div class="row">
+                    <div class="small-12 medium-8 medium-centered columns">
+                        <label>Username
+                            <input ng-model="formData.username" type="text" name="username" placeholder="eg. e-equals-mcsquare" required autofocus="">
+                        </label>
+                    </div>                    
+                    <div class="small-12 medium-6 columns">
+                        <label>Email
+                            <input ng-model="formData.email" type="email" name="email" placeholder="my@email.com" required autofocus="">
+                        </label>
+                    </div>
+                    <div class="small-12 medium-6 columns">
+                        <label>Password
+                            <input type="password" name="password" ng-model="formData.password" placeholder="********" max="32" min="8" required>
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" class="button"></input>
+            </fieldset>
+        </form>
+    </div>
+</div>

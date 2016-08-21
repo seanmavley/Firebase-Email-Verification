@@ -1,0 +1,58 @@
+[{
+  "id": "uidString",
+  "title": "Fibonacci Function",
+  "createdAt": "19873092803984",
+  "createdBy": "uidOfUser",
+  "snippets": {
+    "python": {
+      "createdBy": "uidOfUser",
+      "code": "The code in here",
+      "updatedAt": {
+        "datestamp": "380830928093",
+        "by": "uidOfUser"
+      },
+      "contributors": [{
+        "user": "uidOfUser",
+        "name": "nameOfUser"
+      }, {
+        "user": "uidOfUser",
+        "name": "nameOfUser"
+      }]
+    }
+  }
+}], [{
+  "revisions": {
+    "idOfCode": {
+      "python": [{
+        "createdBy": "uidOfUser",
+        "codeChange": "new code snippet",
+        "timestamp": "9304809238"
+      }, {
+        "createdBy": "uidOfUser",
+        "codeChange": "new code snippet",
+        "timestamp": "98302834"
+      }],
+      "cpp": [{
+        "createdBy": "uidString",
+        "codeChange": "new code snippet",
+        "timestamp": "93840923840"
+      }]
+    },
+    "idOfCode": {
+      "python": [{
+        "createdBy": "uidOfUser",
+        "codeChange": "new code snippet",
+        "timestamp": "9304809238"
+      }, {
+        "createdBy": "uidOfUser",
+        "codeChange": "new code snippet",
+        "timestamp": "98302834"
+      }],
+      "cpp": [{
+        "createdBy": "uidString",
+        "codeChange": "new code snippet",
+        "timestamp": "93840923840"
+      }]
+    }
+  }
+}]

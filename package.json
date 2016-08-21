@@ -1,0 +1,19 @@
+{
+  "name": "firebase-email-verification",
+  "version": "1.0.0",
+  "description": "Firebase Email Verification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rexford <hello@khophi.co>",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.12.12",
+    "firebase-tools": "^3.0.7",
+    "firebase": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.10"
+  }
+}
